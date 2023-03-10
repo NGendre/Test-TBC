@@ -1,5 +1,7 @@
 required packages: django,pandas,requests,pygsheets
 
+pip install django pandas requests pygsheets
+
 Backend OMDB avec (NodeJS + Typescript) ou Python:
 - Créer un projet capable de recevoir/répondre à des requêtes web, 
 - Faire des appels à l'API http://www.omdbapi.com/ et récupérer un listing des films (Image, Titre, Année, Réalisateur).
