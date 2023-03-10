@@ -1,4 +1,4 @@
-required packages: django,pandas,requestspygsheets
+required packages: django,pandas,requests,pygsheets
 
 Backend OMDB avec (NodeJS + Typescript) ou Python:
 - Créer un projet capable de recevoir/répondre à des requêtes web, 
