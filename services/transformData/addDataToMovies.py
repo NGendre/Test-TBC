@@ -1,7 +1,9 @@
 import json
 
 import services.api.OMDB as omdb
-
+import services.api.GoogleSheets as gsheets
+import pandas as pd
+import numpy as np
 
 def transformData(movie):
     movie = omdb.sendQuery('type=movie&t=' +movie)
@@ -22,3 +24,14 @@ def hasPaulWalker(movie):
         if (actor == 'Paul Walker'):
             movie['hasPaulWalker'] = True
     return movie
+
+def findActorsInCommonStarWars(actorsFromOtherMovies,starWarsTitles):
+    starWarsActors = []
+    for title in starWarsTitles:
+        movie = omdb.sendQuery('t='+title)
+        actors = movie['Actors'].split(', ')
+        for actor in actors:
+            starWarsActors.append(actor)
+    print(starWarsActors)
+    actorsInCommon = np.intersect1d(np.array(actorsFromOtherMovies),np.array(starWarsActors))
+    gsheets.sendToGoogleSheets(pd.DataFrame(actorsInCommon),20,20)
