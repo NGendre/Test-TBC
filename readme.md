@@ -16,7 +16,7 @@ https://docs.google.com/spreadsheets/d/1wBQ3AvJ5r3_CJMb7cEc2MIdpPYF9iRiDfdlWdf_f
 
 ## Construction: 
 
-4 couches:
+3 couches:
 - couche "url": contient la liste des url accessibles et indique quelles methodes seront appelées
 - couche "view": Contient les methodes transmettant les données a l'utilisateur
 - couche "service": contient les methodes faisant appel aux differentes api et faisant le traitement de données
