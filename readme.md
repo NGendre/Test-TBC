@@ -1,6 +1,26 @@
-required packages: django,pandas,requests,pygsheets
+# INFOS
+python version: 3.10
+required packages : django, pandas, requests, pygsheets, numpy
+USE: pip install django pandas requests pygsheets numpy
 
-pip install django pandas requests pygsheets
+# URL utiles
+liste des url utilisées (sur postman):
+https://api.postman.com/collections/26301474-81deb685-867f-4a4e-ab9b-6ef31d0d504d?access_key=PMAT-01GV8MZTBWAWBGZ6DQPA6Z028J
+url du tableau gsheets:
+https://docs.google.com/spreadsheets/d/1wBQ3AvJ5r3_CJMb7cEc2MIdpPYF9iRiDfdlWdf_fb7s/edit#gid=0
+
+# Fonctionnement
+
+Architecture :
+ - coucou
+ 
+Fonctionnement : 
+ - lancer la commande `python manage.py runserver` dans la racine du projet après avoir installé les packages nécessaires
+
+Hébergement et déploiement:
+- N'ayant aucune experience concernant le domaine, je ne sais pas comment pouvoir 
+
+# Cahier des charges
 
 Backend OMDB avec (NodeJS + Typescript) ou Python:
 - Créer un projet capable de recevoir/répondre à des requêtes web, 
