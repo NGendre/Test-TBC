@@ -2,6 +2,7 @@
 python version: 3.10
 
 required packages : django, pandas, requests, pygsheets, numpy
+
 USE: pip install django pandas requests pygsheets numpy
 
 # URL utiles
